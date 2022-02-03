@@ -6,11 +6,12 @@ var palabras = ['GOKU', 'SPIDERMAN', 'THOR', 'VEGETA', 'GOHAN', 'VENOM'];
 var palabra = palabras[Math.floor(Math.random()*palabras.length)];
 var reemplazar = palabra.replace(/./g, "_ ");
 document.getElementById("guiones").innerHTML = reemplazar;
+var contadorFallos = 0;
 
 document.getElementById("button").addEventListener("click", function(){
     var letra = document.getElementById("input-letra").value;
     var fallo = true;
-    var contadorFallos = 0;
+    
     document.addEventListener("keydown", function(evento){
         letra = evento.key;
         letraMayuscula = letra.toUpperCase();
