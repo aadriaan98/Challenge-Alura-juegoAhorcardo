@@ -10,16 +10,12 @@ var contadorFallos = 0;
 
 document.getElementById("button").addEventListener("click", function(){
     var letra = document.getElementById("input-letra").value;
-    var fallo = true;
-    
-    document.addEventListener("keydown", function(evento){
-        letra = evento.key;
-        letraMayuscula = letra.toUpperCase();
-    })
+    var fallo = true; 
+    letraMayuscula = letra.toUpperCase();
 
     for(var i in palabra){
-        if (letra == palabra[i]){
-            reemplazar = reemplazar.replaceAt(i*2, letra);
+        if (letraMayuscula == palabra[i]){
+            reemplazar = reemplazar.replaceAt(i*2, letraMayuscula);
             fallo = false;
         }
     }
