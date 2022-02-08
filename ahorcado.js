@@ -2,7 +2,8 @@ String.prototype.replaceAt=function(index, character){
     return this.substr(0, index) + character + this.substr(index+character.length); 
 }
 
-var palabras = ['GOKU', 'SPIDERMAN', 'THOR', 'VEGETA', 'GOHAN', 'VENOM'];
+var palabras = ['GOKU', 'SPIDERMAN', 'THOR', 'VEGETA', 'GOHAN', 'VENOM', 'HAWKEYE', 'MEPHISTO', 'FREZZA', 'CELL', 'BILLS', 
+'BUU', 'KRILIN','KAIOSAMA', 'PICOLLO', 'BROLY', 'HULK', 'FALCON', 'BARDOCK'];
 var palabra = palabras[Math.floor(Math.random()*palabras.length)];
 var reemplazar = palabra.replace(/./g, "_ ");
 document.getElementById("guiones").innerHTML = reemplazar;
@@ -43,11 +44,11 @@ document.getElementById("button").addEventListener("click", function(){
             dibujarPiernaDer();
         }
         if(contadorFallos == 8){
-         alert("Perdiste");
+            document.querySelector("#perdedor").style.display = 'flex';    
         }
     }else{
         if(reemplazar.indexOf('_')< 0){
-            alert("ganaste");
+            document.querySelector("#ganador").style.display = 'flex';
         }
     }   
     document.getElementById("guiones").innerHTML = reemplazar;
