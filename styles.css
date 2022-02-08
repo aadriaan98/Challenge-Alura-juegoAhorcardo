@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+
+}
+body{
+    background-image: url("/maxresdefault31.jpg");
+    background-repeat: no-repeat;
+}
+#juego{
+    padding: 25px;
+    display: flex;
+    min-width: 250px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-size: xx-large;
+}
+.parrafo{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-size:larger;
+}
+#input{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.input-texto{
+    padding: 5px;
+}
+.button{
+    padding: 5px;
+    font-size: medium;
+    background: transparent;
+
+}
+#guiones{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+
+}
+.canvas{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+}

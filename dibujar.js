@@ -1,11 +1,11 @@
 var pantalla = document.querySelector("canvas");
 var pincel = pantalla.getContext("2d");
-pincel.fillStyle = "lightgrey";
-pincel.fillRect(0,0,800,600); 
+pincel.fillStyle = "transparent";
+pincel.fillRect(0,0,800,600);
 
 function dibujarBase(){
     //Dibujo de la base
-    pincel.fillStyle = "lightsalmon";
+    pincel.fillStyle = "black";
     pincel.fillRect(50, 550, 75, 35);
     pincel.moveTo(25,590);
     pincel.lineTo(50,550);
@@ -18,31 +18,31 @@ function dibujarBase(){
     pincel.fill();
 
     //Mastil
-    pincel.fillStyle = "lightsalmon";
+    pincel.fillStyle = "black";
     pincel.fillRect(75, 300, 25, 250);
 
-    pincel.fillStyle = "lightsalmon";
+    pincel.fillStyle = "black";
     pincel.fillRect(75, 50, 25, 250);
 
-    pincel.fillStyle = "lightsalmon";
+    pincel.fillStyle = "black";
     pincel.fillRect(75, 50, 200, 25);
 
-    pincel.fillStyle = "lightsalmon";
+    pincel.fillStyle = "black";
     pincel.fillRect(270, 50, 10, 150);
 };
 
 function dibujarCabeza(){
-    pincel.fillStyle = "lightblue";
+    pincel.fillStyle = "black";
     pincel.beginPath();
     pincel.arc(275, 240, 40,0,Math.PI * 2);
     pincel.fill();
     pincel.beginPath();
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
 };
 
 function dibujarTorso(){
     pincel.beginPath();
-    pincel.fillStyle = "blue";
+    pincel.fillStyle = "black";
     pincel.fillRect(270, 280, 10, 125);
 };
 
