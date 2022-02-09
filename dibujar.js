@@ -7,7 +7,7 @@ var letraErrada = "";
 
 function dibujarTexto(texto,x,y){
     pincel.beginPath();
-    pincel.font = "45pt Verdana";
+    pincel.font = "25pt Verdana";
     pincel.fillStyle = "black";
     pincel.fillText(texto,x,y);
 }
