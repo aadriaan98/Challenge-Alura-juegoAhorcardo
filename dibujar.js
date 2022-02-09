@@ -2,6 +2,23 @@ var pantalla = document.querySelector("canvas");
 var pincel = pantalla.getContext("2d");
 pincel.fillStyle = "transparent";
 pincel.fillRect(0,0,800,600);
+var letraEquivocada = [];
+var letraErrada = "";
+
+function dibujarTexto(texto,x,y){
+    pincel.beginPath();
+    pincel.font = "25pt Verdana";
+    pincel.fillStyle = "black";
+    pincel.fillText(texto,x,y);
+}
+
+function dibujarLetraIncorrecta(letraIncorrecta){
+    
+    letraEquivocada.push(letraIncorrecta)
+    letraErrada = letraEquivocada.join(" ");
+    dibujarTexto(letraErrada, 400, 100);
+    
+}
 
 function dibujarBase(){
     //Dibujo de la base
