@@ -22,7 +22,7 @@ function dibujarLetraIncorrecta(letraIncorrecta){
 
 function dibujarBase(){
     //Dibujo de la base
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fillRect(50, 550, 75, 35);
     pincel.moveTo(25,590);
     pincel.lineTo(50,550);
@@ -35,31 +35,31 @@ function dibujarBase(){
     pincel.fill();
 
     //Mastil
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fillRect(75, 300, 25, 250);
 
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fillRect(75, 50, 25, 250);
 
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fillRect(75, 50, 200, 25);
 
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fillRect(270, 50, 10, 150);
 };
 
 function dibujarCabeza(){
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.beginPath();
     pincel.arc(275, 240, 40,0,Math.PI * 2);
     pincel.fill();
     pincel.beginPath();
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
 };
 
 function dibujarTorso(){
     pincel.beginPath();
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fillRect(270, 280, 10, 125);
 };
 
@@ -68,7 +68,7 @@ function dibujarBrazoIzq(){
     pincel.lineTo(185,235);
     pincel.lineTo(185,245);
     pincel.lineTo(275,300);
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fill();
 };
 
@@ -77,7 +77,7 @@ function dibujarBrazoDer(){
     pincel.lineTo(375,230);
     pincel.lineTo(375,240);
     pincel.lineTo(280,300);
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fill();
 };
 
@@ -86,7 +86,7 @@ function dibujarPiernaIzq(){
     pincel.lineTo(175,475);
     pincel.lineTo(175,480);
     pincel.lineTo(270,410);
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fill();
 };
 
@@ -95,6 +95,6 @@ function dibujarPiernaDer(){
     pincel.lineTo(375,475);
     pincel.lineTo(375,480);
     pincel.lineTo(270,410);
-    pincel.fillStyle = "white";
+    pincel.fillStyle = "black";
     pincel.fill();
 };

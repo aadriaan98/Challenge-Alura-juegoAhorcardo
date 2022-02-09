@@ -5,8 +5,7 @@
 
 }
 body{
-    background-image: url(/maxresdefault31.jpg);
-    background-repeat: no-repeat;
+    background-color: darkcyan;
 }
 #juego{
     padding: 25px;
